@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import { Switch, NavLink, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import FuelSavingsPage from './containers/FuelSavingsPage';
-import AboutPage from './AboutPage';
-import NotFoundPage from './NotFoundPage';
+import HomePage from './components/HomePage';
+import FuelSavingsPage from './components/containers/FuelSavingsPage';
+import AboutPage from './components/AboutPage';
+import NotFoundPage from './components/NotFoundPage';
 
-export default class Root extends Component {
+export default class Routes extends Component {
   render() {
     const activeStyle = { color: 'blue' };
     const { store, history } = this.props;
@@ -36,7 +36,7 @@ export default class Root extends Component {
   }
 }
 
-Root.propTypes = {
+Routes.propTypes = {
   store: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired
 }; 
