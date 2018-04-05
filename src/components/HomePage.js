@@ -1,16 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/about-page.scss';
 
+// Since this component is simple and static, there's no parent container for it.
 const HomePage = () => {
   return (
-    <div>
-      <h1>React Slingshot</h1>
-
-      <h2>Get Started</h2>
-      <ol>
-        <li>Review the <Link to="/fuel-savings">demo app</Link></li>
-        <li>Remove the demo and start coding: npm run remove-demo1234</li>
-      </ol>
+    <div className="container">
+      <h2 className="alt-header">Home</h2>
     </div>
   );
 };

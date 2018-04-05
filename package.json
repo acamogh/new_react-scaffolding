@@ -31,6 +31,8 @@
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
+    "antd": "3.4.0",
+    "bootstrap": "3.3.7",
     "object-assign": "4.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
